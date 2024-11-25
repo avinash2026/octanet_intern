@@ -4,7 +4,7 @@
     box-sizing: border-box;
   }
   body{
-    background-color: rgb(28, 28, 28);
+    background-color: black;
     width: 100%;
   }
   
@@ -33,6 +33,13 @@
     color: white;
     margin-left: 15px;
   }
+  .sec-1 a:hover{
+    background-color: white;
+    color:black;
+    transition: 0.2s;
+    padding:5px;
+    cursor:pointer;
+  }
   /*.................................sec2..........................................*/
   
   /*.bg1{
@@ -44,7 +51,6 @@
   
   }*/
   .sec-2 h2{
-    margin-top: 30px;
     font-size: 50px;
     text-align: center;
     color: white;
@@ -79,6 +85,11 @@
     cursor: pointer;
     /*justify-content: center;*/
   }
+  .btn button:hover{
+    background-color: rgb(19, 50, 5);
+    color:white;
+    transition:0.2s;
+  }
   /*...............................................media queries,,,,,,,,,,,,,,,,,,,,,,,,,*/
   
   @media (max-width:450px){
@@ -86,6 +97,11 @@
       margin-left: 20px;
       font-size: 0.8em;
       margin-top:12px;
+    }
+  }
+  @media(max-width:760px){
+    .sec-2 img{
+      display:none;
     }
   }
   
@@ -103,28 +119,38 @@
     .sec-1 .mid1{
       margin-left: 120px;
     }
+    .bg1 img{
+      width:100%;
+      height:auto;
+      opacity:0.2;
+    }
+    .sec-2{
+      position:absolute;
+      top:10%;
+    }
   }
   @media (min-width:1026px){
     .sec-2 h2{
       font-size: 80px;
-      margin: 100px 300px 0px 300px;
+      margin: 100px 350px 0px 350px;
      
       font-weight: normal;
     }
     .sec-2 p{
       text-align: center;
       font-size: 20px;
-      margin:50px 300px 30px 300px;
+      margin:50px 350px 30px 350px;
     }
   }
   @media (min-width:1022px){
     .sec-2 p{
       text-align: center;
     }
-    /*.sec-2 h2{
+    .sec-2 h2{
       font-size: 80px;
      
-      margin-left: 100px;
+  }
+     /* margin-left: 100px;
       margin-right: 100px;
       font-weight: normal;
     }
